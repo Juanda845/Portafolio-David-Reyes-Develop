@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Paleta de colores */
+    --color-de-fondo: #ffffff;
+    --color-de-letra: #464646;
+    --color-de-botones: #2a7ae4;
+    /* Fuente de letra */
+    --fuente-raleway: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-de-fondo);
+    font-family: var(--fuente-raleway);
+    color: var(--color-de-letra);
+}
+
+/* Desarrollo Mobile */
+.container-cabecera {
+    min-height: 56px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Gap para móvil */
+    position: fixed;
+}
+
+.container-logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-cabecera {
+    width: 40px;
+    height: 40px;
+}
+
+.title-cabecera {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-lista {
+    list-style: none;
+}
+
+.menu-item:nth-child(1),
+.menu-item:nth-child(2),
+.menu-item:nth-child(3),
+.menu-item:nth-child(4),
+.menu-item:nth-child(5) {
+    display: none;
+}
+
+.contacto-link {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--color-de-letra);
+}
+
+/* Desarrollo Tablet */
+@media (min-width: 768px) {
+    .container-cabecera {
+        padding: 16px;
+        gap: 149px; /* Gap para tablet */
+    }
+
+    .logo-cabecera {
+        width: 55px;
+        height: 55px;
+    }
+
+    .title-cabecera {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .menu-lista {
+        display: flex;
+        gap: 32px;
+    }
+
+    .menu-item {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .contacto-link {
+        font-size: 16px;
+    }
+}
+
+/* Desarrollo desktop */
+@media (min-width: 992px) {
+    .container-cabecera {
+        min-height: 85px;
+        padding: 0 60px;
+        gap: 114px; /* Gap para desktop */
+    }
+
+    .logo-cabecera {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title-cabecera {
+        font-size: 16px;
+    }
+
+    .menu-item:nth-child(1),
+    .menu-item:nth-child(2),
+    .menu-item:nth-child(3),
+    .menu-item:nth-child(4),
+    .menu-item:nth-child(5) {
+        display: flex;
+    }
+
+    .contacto-link {
+        font-size: 16px;
+    }
+}

@@ -29,7 +29,7 @@ Estoy comprometido con la entrega de soluciones creativas y efectivas, y valoro 
 - [Challenge Text Encrypter](https://github.com/Juanda845/Challenge-Text-Encryptor)  
   Un encriptador de texto que transforma mensajes de acuerdo a ciertas reglas. Implementado con JavaScript, HTML y CSS. Permite encriptar y desencriptar mensajes, con una interfaz simple y responsive.
 
-  ## 📄 Curriculum Vitae
+## 📄 Curriculum Vitae
 
 Puedes descargar mi [Curriculum Vitae en PDF](https://drive.google.com/drive/folders/1IpaOJH8b3_05D22tpuG5HFfOZCgcGUIJ?usp=sharing) para más detalles sobre mi experiencia y habilidades.
 
