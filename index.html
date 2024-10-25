@@ -12,38 +12,96 @@
 </head>
 
 <body>
+    <!-- Contenedor de la cabecera que incluye el logo y el menú de navegación -->
     <header class="container-cabecera">
         <div class="container-logo-title">
             <img src="./img/Logo.png" alt="Logo" class="logo-cabecera">
             <span class="title-cabecera">David Reyes | Front-End Developer</span>
         </div>
+        <!-- Menú de navegación con enlaces a diferentes secciones del sitio -->
         <nav class="navbar">
             <ul class="menu-lista">
-                <li class="menu-item"><a href="#" class="menu-link">Sobre mi</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">Skills</a></li>
+                <li class="menu-item"><a href="#sobre_mi" class="menu-link">Sobre mí</a></li>
+                <li class="menu-item"><a href="#skill" class="menu-link">Skills</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Hobbies</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Formación</a></li>
                 <li class="menu-item"><a href="#" class="menu-link">Proyecto</a></li>
-                <li class="menu-item"><a href="mailto:juanda3194236082@gmail.com" class="menu-link contacto-link">Contacto@David_Reyes_Develop</a></li>
+                <li class="menu-item"><a href="mailto:juanda3194236082@gmail.com" class="menu-link menu-contacto-link">Contacto@David_Reyes_Develop</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Contenedor principal del contenido -->
     <main class="container-main">
-        <section class="presentacion">
-            <div class="container-info">
+        <!-- Sección de presentación con título, descripción y enlaces a redes sociales -->
+        <section class="container-presentacion">
+            <div class="container-presentacion-informacion">
+                <!-- Introducción breve sobre el desarrollador -->
                 <h1 class="title-presentacion">Hola, soy David Reyes. No soy un robot, pero soy Desarrollador Front-End.</h1>
-                <p class="text-presentacion">Desarrollador Front-End con experiencia en la creación de páginas web optimizadas y funcionales. Enfocado en la mejora continua y la innovación, aporto soluciones eficientes y colaboro activamente para garantizar resultados de alto impacto.</p>
-                <ul class="lista-redes-sociales">
-                    <li class="item-redes-sociales"><a href="https://github.com/Juanda845" target="_blank" class="redes-sociales-link">Github <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
-                    <li class="item-redes-sociales"><a href="https://www.linkedin.com/in/david-reyes-549697271/" target="_blank" class="redes-sociales-link">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
-                    <li class="item-redes-sociales"><a href="https://www.instagram.com/david_reyes845/" target="_blank" class="redes-sociales-link">Instagram <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
-                    <li class="item-redes-sociales"><a href="Resources/CV_Juan_David_Rosero_Reyes.pdf" target="_blank" class="redes-sociales-link" download="CV_Juan_David_Rosero_Reyes.pdf">Currículo <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
+                <p class="text-presentacion">Desarrollador Front-End con experiencia en la creación de páginas web
+                    optimizadas y funcionales. Enfocado en la mejora continua y la innovación, aporto soluciones
+                    eficientes y colaboro activamente para garantizar resultados de alto impacto.</p>
+                <!-- Enlaces a redes sociales y currículum -->
+                <ul class="lista-presentacion-redes-sociales">
+                    <li class="item-presentacion-redes-sociales"><a href="https://github.com/Juanda845" target="_blank" class="presentacion-redes-sociales-link">Github <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
+                    <li class="item-presentacion-redes-sociales"><a href="https://www.linkedin.com/in/david-reyes-549697271/" target="_blank" class="presentacion-redes-sociales-link">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
+                    <li class="item-presentacion-redes-sociales"><a href="https://www.instagram.com/david_reyes845/" target="_blank" class="presentacion-redes-sociales-link">Instagram <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
+                    <li class="item-presentacion-redes-sociales"><a href="Resources/CV_Juan_David_Rosero_Reyes.pdf" target="_blank" class="presentacion-redes-sociales-link" download="CV_Juan_David_Rosero_Reyes.pdf">Currículo <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a></li>
                 </ul>
             </div>
-            <img src="./img/Fondo-Profesional.jpeg" alt="Imagen de perfil" class="image-perfil">
+            <!-- Imagen de perfil -->
+            <img src="./img/Fondo-Profesional.jpeg" alt="Imagen de perfil" class="presentacion-imagen-perfil">
+        </section>|
+
+        <!-- Sección 'Sobre mí' con información más detallada sobre el desarrollador -->
+        <section id="sobre_mi" class="container-sobre-mi">
+            <div class="sobre-mi">
+                <h1 class="title-sobre-mi">Sobre mí</h1>
+                <p class="text-sobre-mi">Soy desarrollador Front-End con especialización en React, HTML, CSS y
+                    JavaScript, enfocado en la creación de páginas web <br> eficientes y optimizadas. Con una sólida
+                    capacidad para implementar nuevas tecnologías, me esfuerzo por ofrecer soluciones <br> innovadoras
+                    que mejoren la experiencia del usuario y cumplan con los más altos estándares de calidad en cada
+                    proyecto. <br><br> Comprometido con la entrega de resultados excepcionales, valoro el trabajo en
+                    equipo y siempre busco colaborar de manera proactiva. <br> Estoy abierto a recibir feedback para
+                    garantizar que cada iniciativa no solo cumpla, sino que supere las expectativas. <br> Mi enfoque
+                    constante en el aprendizaje y la adopción de nuevas herramientas me permite adaptarme rápidamente a
+                    las necesidades de cada proyecto.</p>
+                <!-- Firma digital para personalizar la sección -->
+                <img src="./img/Firma-digital.png" alt="Firma" class="firma-sobre-mi">
+            </div>
+        </section>
+
+        <!-- Sección de habilidades (skills) y hobbies -->
+        <section class="container-skills-and-hobbies">
+            <!-- Listado de habilidades técnicas con íconos representativos -->
+            <div class="skills">
+                <h1 class="title-skills">Skills</h1>
+                <ul class="lista-skills">
+                    <li class="item-skills"><i class="fa-brands fa-html5 fa-2xl"></i> Html 5</li>
+                    <li class="item-skills"><i class="fa-brands fa-css3 fa-2xl"></i> CSS</li>
+                    <li class="item-skills"><i class="fa-brands fa-js fa-2xl"></i> JavaScript</li>
+                    <li class="item-skills"><i class="fa-brands fa-react fa-2xl"></i> React</li>
+                    <li class="item-skills"><i class="fa-solid fa-database fa-2xl"></i> MySQL</li>
+                    <li class="item-skills"><i class="fa-brands fa-github fa-2xl"></i> Github</li>
+                </ul>
+            </div>
+
+            <!-- Listado de hobbies personales con íconos -->
+            <div class="hobbies">
+                <h1 class="title-hobbies">Hobbies</h1>
+                <ul class="lista-hobbies">
+                    <li class="item-hobbies"><i class="fa-solid fa-dumbbell fa-2xl"></i> Hacer Gimansio</li>
+                    <li class="item-hobbies"><i class="fa-solid fa-gamepad fa-2xl"></i> Video juegos</li>
+                    <li class="item-hobbies"><i class="fa-solid fa-headphones fa-2xl"></i> Oir música</li>
+                    <li class="item-hobbies"><i class="fa-solid fa-futbol fa-2xl"></i> Ver futbol</li>
+                    <li class="item-hobbies"><i class="fa-solid fa-plane fa-2xl"></i> Viajar</li>
+                    <li class="item-hobbies"><i class="fa-solid fa-book-open-reader fa-2xl"></i> Leer</li>
+                </ul>
+            </div>
         </section>
     </main>
+
+    <!-- Vinculación al archivo JavaScript externo -->
     <script src="./JavaScript/functions.js"></script>
 </body>
 

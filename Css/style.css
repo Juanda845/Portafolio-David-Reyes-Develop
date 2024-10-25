@@ -1,59 +1,78 @@
+/* Importación de la fuente Raleway */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Estilos CSS para la paleta de colores, fuente y estilos generales */
 :root {
     /* Paleta de colores */
-    --color-de-fondo: #ffffff;
-    --color-de-fondo-secundario: #EAF2FD;
-    --color-de-letra: #464646;
     --color-de-botones: #2a7ae4;
+    --color-de-fondo: #fff5ee;
+    --color-de-fondo-secundario: #EAF2FD;
+    --color-de-fondo-terciario: #ffffff;
+    --color-de-letra: #464646;
+
     /* Fuente de letra */
     --fuente-raleway: "Raleway", sans-serif;
 }
 
+/* Estilos generales aplicados a todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos aplicados al html */
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Estilos aplicados al cuerpo */
 body {
-    min-height: 100vh;
     background-color: var(--color-de-fondo);
-    font-family: var(--fuente-raleway);
     color: var(--color-de-letra);
+    font-family: var(--fuente-raleway);
+    min-height: 100vh;
 }
 
 /* Desarrollo Mobile */
+
+/* Estilos para la cabecera y su contenido */
 .container-cabecera {
-    width: 100%;
-    min-height: 56px;
-    display: flex;
-    padding: 8px;
     align-items: center;
-    justify-content: space-between;
+    background-color: var(--color-de-fondo-terciario);
+    display: flex;
     gap: 30px;
+    justify-content: space-between;
+    min-height: 56px;
+    padding: 8px;
     position: relative;
+    width: 100%;
 }
 
+/* Estilos para el contenedor del logo y título */
 .container-logo-title {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
+/* Estilos para el logo en la cabecera */
 .logo-cabecera {
-    width: 40px;
     height: 40px;
+    width: 40px;
 }
 
+/* Estilos para el título en la cabecera */
 .title-cabecera {
-    font-weight: bold;
     font-size: 12px;
+    font-weight: bold;
 }
 
+/* Estilos para la lista del menú */
 .menu-lista {
     list-style: none;
 }
 
+/* Estilos para los emenu-contacto-linklementos del menú */
 .menu-item:nth-child(1),
 .menu-item:nth-child(2),
 .menu-item:nth-child(3),
@@ -62,155 +81,292 @@ body {
     display: none;
 }
 
-.contacto-link {
+/* Estilos para el enlace de contacto en el menú */
+.menu-contacto-link {
     font-size: 10px;
     font-weight: bold;
 }
 
+/* Estilos para los enlaces del menú */
 .menu-link {
-    text-decoration: none;
     color: var(--color-de-letra);
+    text-decoration: none;
 }
 
-.container-main {
-    padding: 16px;
-}
-
-.presentacion {
+/* Estilos para la presentación y su contenido */
+.container-presentacion {
     display: flex;
     flex-direction: column-reverse;
     gap: 16px;
+    padding: 16px;
 }
 
-.container-info{
+/* Estilos para la información en la presentación */
+.container-presentacion-informacion {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
+/* Estilos para el título de la presentación */
 .title-presentacion {
     font-size: 22px;
     font-weight: bold;
 }
 
+/* Estilos para el texto de la presentación */
 .text-presentacion {
     font-size: 14px;
     font-weight: 400;
 }
 
-.lista-redes-sociales {
-    list-style: none;
+/* Estilos para la lista de redes sociales en la presentación */
+.lista-presentacion-redes-sociales {
     display: flex;
     gap: 8px;
+    list-style: none;
 }
 
-.item-redes-sociales {
+/* Estilos para los elementos de la lista de redes sociales */
+.item-presentacion-redes-sociales {
     font-size: 14px;
     font-weight: 600;
 }
 
-.redes-sociales-link {
-    text-decoration: none;
+/* Estilos para los enlaces de redes sociales en la presentación */
+.presentacion-redes-sociales-link {
     color: var(--color-de-letra);
+    text-decoration: none;
 }
 
+/* Estilos para el icono de la presentación */
 i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     color: var(--color-de-letra);
 }
 
-.image-perfil {
-    width: 98px;
-    height: 98px;
+/* Estilos para la imagen de perfil en la presentación */
+.presentacion-imagen-perfil {
     border-radius: 50%;
+    height: 98px;
+    width: 98px;
+}
+
+/* Estilos para la sección "Sobre mí" y su contenido */
+.container-sobre-mi {
+    background-color: var(--color-de-fondo-secundario);
+}
+
+/* Estilos para el contenedor de la sección "Sobre mí" */
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Estilos para el título de la sección "Sobre mí" */
+.title-sobre-mi {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Estilos para el texto en la sección "Sobre mí" */
+.text-sobre-mi {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Estilos para la firma en la sección "Sobre mí" */
+.firma-sobre-mi {
+    height: 90px;
+    width: 140px;
+}
+
+/* Estilos para el contenedor de habilidades y pasatiempos */
+.container-skills-and-hobbies {
+    padding: 16px;
+}
+
+/* Estilos para la sección de habilidades */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Estilos para los títulos en habilidades y pasatiempos */
+.container-skills-and-hobbies h1.title-skills,
+.container-skills-and-hobbies h1.title-hobbies {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para las listas de habilidades y pasatiempos */
+.container-skills-and-hobbies ul.lista-skills,
+.container-skills-and-hobbies ul.lista-hobbies {
+    display: grid;
+    gap: 32px 16px;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Estilos para los elementos de la lista de habilidades y pasatiempos */
+.container-skills-and-hobbies li.item-skills,
+.container-skills-and-hobbies li.item-hobbies {
+    background-color: var(--color-de-fondo-terciario);
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 20px;
+    height: 118px;
+    justify-content: flex-end;
+    padding: 16px;
+    width: 156px;
+}
+
+/* Estilos para los iconos en la sección de habilidades y pasatiempos */
+.container-skills-and-hobbies i {
+    color: var(--color-de-botones);
+}
+
+/* Estilos para la sección de pasatiempos */
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 16px;
 }
 
 /* Desarrollo Tablet */
 @media (min-width: 768px) {
+
+    /* Estilos para la cabecera */
     .container-cabecera {
-        padding: 16px 32px;
         gap: 149px;
+        padding: 16px 32px;
     }
 
+    /* Estilos para el logo en la cabecera */
     .logo-cabecera {
-        width: 55px;
         height: 55px;
+        width: 55px;
     }
 
-    .title-cabecera {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 16px;
+    /* Estilos para los elementos del menú */
+    .menu-item {
+        font-size: 18px;
+        font-weight: 500;
     }
 
+    /* Estilos para la lista de menú */
     .menu-lista {
         display: flex;
         gap: 32px;
     }
 
-    .menu-item {
-        font-weight: 500;
-        font-size: 18px;
-    }
-
-    .contacto-link {
+    /* Estilos para el enlace de contacto en el menú */
+    .menu-contacto-link {
         font-size: 16px;
     }
 
-    .container-main {
-        padding: 32px;
-    }
-
-    .presentacion {
+    /* Estilos para la presentación */
+    .container-presentacion {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
-    }
-
-    .container-info {
-        display: flex;
-        gap: 8px;
         padding: 32px;
     }
-    
+
+    /* Estilos para la información dentro del contenedor de presentación */
+    .container-presentacion-informacion {
+        display: flex;
+        gap: 8px;
+    }
+
+    /* Estilos para el texto en la sección de presentación */
     .text-presentacion {
         font-size: 16px;
         font-weight: 400;
     }
-    
-    .lista-redes-sociales {
-        list-style: none;
+
+    /* Estilos para los elementos de la lista de redes sociales en presentación */
+    .lista-presentacion-redes-sociales {
         display: flex;
         gap: 32px;
+        list-style: none;
     }
-    
-    .item-redes-sociales {
+
+    /* Estilos para los elementos de redes sociales en presentación */
+    .item-presentacion-redes-sociales {
         font-size: 16px;
         font-weight: 500;
     }
-    
-    .image-perfil {
-        width: 146px;
+
+    /* Estilos para la imagen de perfil en la sección de presentación */
+    .presentacion-imagen-perfil {
         height: 146px;
+        width: 146px;
+    }
+
+    /* Estilos para la sección "Sobre mí" */
+    .sobre-mi {
+        padding: 32px;
+    }
+
+    /* Estilos para la sección de habilidades y pasatiempos */
+    .container-skills-and-hobbies {
+        padding: 32px;
+    }
+
+    /* Estilos para los elementos de la lista de habilidades y pasatiempos */
+    .container-skills-and-hobbies li.item-skills,
+    .container-skills-and-hobbies li.item-hobbies {
+        width: 224px;
+    }
+
+    /* Estilos para las listas de habilidades y pasatiempos */
+    .container-skills-and-hobbies ul.lista-skills,
+    .container-skills-and-hobbies ul.lista-hobbies {
+        display: grid;
+        gap: 32px 16px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
+
 /* Desarrollo desktop */
 @media (min-width: 992px) {
+
+    /* Estilos para el contenedor principal */
+    .container-main {
+        padding-top: 100px;
+    }
+
+    /* Estilos para la cabecera */
     .container-cabecera {
-        min-height: 85px;
-        padding: 0 60px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         gap: 114px;
+        min-height: 85px;
+        padding: 0 32px;
+        position: fixed;
+        transition: background-color 0.5s ease, box-shadow 0.5s ease;
+        z-index: 1000;
     }
 
+    /* Estilos para el logo en la cabecera */
     .logo-cabecera {
-        width: 70px;
         height: 70px;
+        width: 70px;
     }
 
+    /* Estilos para el título en la cabecera */
     .title-cabecera {
         font-size: 16px;
     }
 
+    /* Estilos para los elementos del menú */
     .menu-item:nth-child(1),
     .menu-item:nth-child(2),
     .menu-item:nth-child(3),
@@ -219,44 +375,103 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         display: flex;
     }
 
-    .contacto-link {
+    /* Estilos para el enlace de contacto en el menú */
+    .menu-contacto-link {
         font-size: 16px;
     }
 
-    .presentacion {
+    /* Estilos para la presentación */
+    .container-presentacion {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        padding-bottom: 61px;
     }
 
-    .container-info {
+    /* Estilos para la información dentro del contenedor de presentación */
+    .container-presentacion-informacion {
         display: flex;
         gap: 24px;
+        padding: 0 61px;
     }
 
+    /* Estilos para el título en la sección de presentación */
     .title-presentacion {
         font-size: 52px;
         font-weight: bold;
     }
-    
+
+    /* Estilos para el texto en la sección de presentación */
     .text-presentacion {
         font-size: 22px;
         font-weight: 400;
     }
-    
-    .lista-redes-sociales {
-        list-style: none;
+
+    /* Estilos para la lista de redes sociales en presentación */
+    .lista-presentacion-redes-sociales {
         display: flex;
         gap: 32px;
+        list-style: none;
     }
-    
-    .item-redes-sociales {
+
+    /* Estilos para los elementos de redes sociales en presentación */
+    .item-presentacion-redes-sociales {
         font-size: 16px;
         font-weight: 500;
     }
-    
-    .image-perfil {
-        width: 368px;
+
+    /* Estilos para la imagen de perfil en la sección de presentación */
+    .presentacion-imagen-perfil {
         height: 368px;
+        width: 368px;
+    }
+
+    /* Estilos para la sección "Sobre mí" */
+    .container-sobre-mi {
+        padding: 64px;
+    }
+
+    /* Estilos para el título en la sección "Sobre mí" */
+    .title-sobre-mi {
+        font-size: 32px;
+    }
+
+    /* Estilos para el texto en la sección "Sobre mí" */
+    .text-sobre-mi {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* Estilos para la firma en la sección "Sobre mí" */
+    .firma-sobre-mi {
+        height: 90px;
+        width: 140px;
+    }
+
+    /* Estilos para la sección de habilidades y pasatiempos */
+    .container-skills-and-hobbies h1.title-skills,
+    .container-skills-and-hobbies h1.title-hobbies {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    /* Estilos para los elementos de la lista de habilidades y pasatiempos */
+    .container-skills-and-hobbies li.item-skills,
+    .container-skills-and-hobbies li.item-hobbies {
+        height: 174px;
+        width: 176px;
+    }
+
+    /* Estilos para las listas de habilidades y pasatiempos */
+    .container-skills-and-hobbies ul.lista-skills,
+    .container-skills-and-hobbies ul.lista-hobbies {
+        display: flex;
+        gap: 32px 16px;
+        justify-content: space-between;
+    }
+
+    /* Estilos para la sección de hobbies */
+    .hobbies {
+        padding-top: 88px;
     }
 }
