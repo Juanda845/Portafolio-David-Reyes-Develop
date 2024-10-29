@@ -23,7 +23,7 @@
 
 /* Estilos aplicados al html */
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 /* Estilos aplicados al cuerpo */
@@ -34,7 +34,9 @@ body {
     min-height: 100vh;
 }
 
-/* Desarrollo Mobile */
+/* -------- Fin de Estilos generales -------- */
+
+/* -------- Desarrollo Mobile -------- */
 
 /* Estilos para la cabecera y su contenido */
 .container-cabecera {
@@ -72,7 +74,7 @@ body {
     list-style: none;
 }
 
-/* Estilos para los emenu-contacto-linklementos del menú */
+/* Estilos para los elementos del menú */
 .menu-item:nth-child(1),
 .menu-item:nth-child(2),
 .menu-item:nth-child(3),
@@ -92,6 +94,10 @@ body {
     color: var(--color-de-letra);
     text-decoration: none;
 }
+
+/* -------- Fin de Estilos de Desarrollo Mobile -------- */
+
+/* -------- Estilos de Presentación -------- */
 
 /* Estilos para la presentación y su contenido */
 .container-presentacion {
@@ -151,6 +157,10 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     width: 98px;
 }
 
+/* -------- Fin de Estilos de Presentación -------- */
+
+/* -------- Sección "Sobre mí" -------- */
+
 /* Estilos para la sección "Sobre mí" y su contenido */
 .container-sobre-mi {
     background-color: var(--color-de-fondo-secundario);
@@ -182,6 +192,10 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     width: 140px;
 }
 
+/* -------- Fin de Estilos de Sección "Sobre mí" -------- */
+
+/* -------- Contenedor de habilidades y pasatiempos -------- */
+
 /* Estilos para el contenedor de habilidades y pasatiempos */
 .container-skills-and-hobbies {
     padding: 16px;
@@ -194,8 +208,14 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     gap: 32px;
 }
 
-/* Estilos para los títulos en habilidades y pasatiempos */
-.container-skills-and-hobbies h1.title-skills,
+/* Estilos para los títulos en habilidades */
+.container-skills-and-hobbies h1.title-skills {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para la sección de pasatiempos */
 .container-skills-and-hobbies h1.title-hobbies {
     font-size: 22px;
     font-weight: bold;
@@ -239,39 +259,125 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     padding-top: 16px;
 }
 
-/* Desarrollo Tablet */
+/* -------- Fin de Estilos de habilidades y pasatiempos -------- */
+
+/* -------- Formación académica -------- */
+
+/* Contenedor principal para la sección de formación académica */
+.container-formacion-academica {
+    background-color: var(--color-de-fondo-secundario);
+    padding: 32px;
+}
+
+/* Título de la sección de formación académica */
+.title-formacion-academica {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contenedor flexible para las tarjetas de formación académica */
+.formacion-academica {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilo individual para cada tarjeta de formación académica */
+.cards-formacion-academica {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 32px;
+}
+
+/* Contenedor para el logo en cada tarjeta */
+.container-card-imagen-formacion-academica {
+    align-items: center;
+    background-color: var(--color-de-fondo-terciario);
+    display: flex;
+    gap: 8px;
+    height: 118px;
+    justify-content: center;
+    width: 296px;
+}
+
+/* Ajuste de imagen del logo en el contenedor */
+.container-card-imagen-formacion-academica img.logo-formacion-academica {
+    display: block;
+    object-fit: cover;
+    padding: 16px;
+}
+
+/* Tamaño del logo en la primera tarjeta */
+.cards-formacion-academica:nth-of-type(1) .logo-formacion-academica {
+    height: 100px;
+    width: 100px;
+}
+
+/* Tamaño del logo en la segunda tarjeta */
+.cards-formacion-academica:nth-of-type(2) .logo-formacion-academica {
+    height: 80px;
+    width: 80px;
+}
+
+/* Tamaño del logo en la tercera tarjeta */
+.cards-formacion-academica:nth-of-type(3) .logo-formacion-academica {
+    height: 100px;
+    width: 200px;
+}
+
+/* Contenedor de texto en cada tarjeta */
+.text-container {
+    width: 296px;
+}
+
+/* Título del curso en cada tarjeta de formación académica */
+.title-formacion-academica-curso {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Descripción del curso en cada tarjeta de formación académica */
+.text-formacion-academica {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* -------- Fin de Estilos de Formación académica -------- */
+
+/* -------- Desarrollo Tablet -------- */
+
 @media (min-width: 768px) {
 
-    /* Estilos para la cabecera */
+    /* -------- Cabecera -------- */
     .container-cabecera {
         gap: 149px;
         padding: 16px 32px;
     }
 
-    /* Estilos para el logo en la cabecera */
     .logo-cabecera {
         height: 55px;
         width: 55px;
     }
 
-    /* Estilos para los elementos del menú */
     .menu-item {
         font-size: 18px;
         font-weight: 500;
     }
 
-    /* Estilos para la lista de menú */
     .menu-lista {
         display: flex;
         gap: 32px;
     }
 
-    /* Estilos para el enlace de contacto en el menú */
     .menu-contacto-link {
         font-size: 16px;
     }
 
-    /* Estilos para la presentación */
+    /* -------- Fin de Cabecera -------- */
+
+    /* -------- Presentación -------- */
     .container-presentacion {
         align-items: center;
         display: flex;
@@ -279,72 +385,95 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         padding: 32px;
     }
 
-    /* Estilos para la información dentro del contenedor de presentación */
     .container-presentacion-informacion {
         display: flex;
         gap: 8px;
     }
 
-    /* Estilos para el texto en la sección de presentación */
     .text-presentacion {
         font-size: 16px;
         font-weight: 400;
     }
 
-    /* Estilos para los elementos de la lista de redes sociales en presentación */
     .lista-presentacion-redes-sociales {
         display: flex;
         gap: 32px;
         list-style: none;
     }
 
-    /* Estilos para los elementos de redes sociales en presentación */
     .item-presentacion-redes-sociales {
         font-size: 16px;
         font-weight: 500;
     }
 
-    /* Estilos para la imagen de perfil en la sección de presentación */
     .presentacion-imagen-perfil {
         height: 146px;
         width: 146px;
     }
 
-    /* Estilos para la sección "Sobre mí" */
+    /* -------- Fin de Presentación -------- */
+
+    /* -------- Sobre mí -------- */
     .sobre-mi {
         padding: 32px;
     }
 
-    /* Estilos para la sección de habilidades y pasatiempos */
+    /* -------- Fin de Sobre mí -------- */
+
+    /* -------- Habilidades y Pasatiempos -------- */
     .container-skills-and-hobbies {
         padding: 32px;
     }
 
-    /* Estilos para los elementos de la lista de habilidades y pasatiempos */
     .container-skills-and-hobbies li.item-skills,
     .container-skills-and-hobbies li.item-hobbies {
         width: 224px;
     }
 
-    /* Estilos para las listas de habilidades y pasatiempos */
     .container-skills-and-hobbies ul.lista-skills,
     .container-skills-and-hobbies ul.lista-hobbies {
         display: grid;
         gap: 32px 16px;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* -------- Fin de Habilidades y Pasatiempos -------- */
+
+    /* -------- Formación Académica -------- */
+    .formacion-academica {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container-card-imagen-formacion-academica {
+        width: 224px;
+        height: 118px;
+    }
+
+    .text-container {
+        width: 224px;
+        height: 118px;
+    }
+
+    /* -------- Fin de Formación Académica -------- */
+
 }
 
+/* -------- Fin de Desarrollo Tablet -------- */
 
-/* Desarrollo desktop */
+/* -------- Desarrollo desktop -------- */
+
 @media (min-width: 992px) {
 
-    /* Estilos para el contenedor principal */
+    /* -------- Contenedor Principal -------- */
     .container-main {
         padding-top: 100px;
     }
 
-    /* Estilos para la cabecera */
+    /* -------- Fin de Contenedor Principal -------- */
+
+    /* -------- Cabecera -------- */
     .container-cabecera {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         gap: 114px;
@@ -355,18 +484,15 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         z-index: 1000;
     }
 
-    /* Estilos para el logo en la cabecera */
     .logo-cabecera {
         height: 70px;
         width: 70px;
     }
 
-    /* Estilos para el título en la cabecera */
     .title-cabecera {
         font-size: 16px;
     }
 
-    /* Estilos para los elementos del menú */
     .menu-item:nth-child(1),
     .menu-item:nth-child(2),
     .menu-item:nth-child(3),
@@ -375,12 +501,13 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         display: flex;
     }
 
-    /* Estilos para el enlace de contacto en el menú */
     .menu-contacto-link {
         font-size: 16px;
     }
 
-    /* Estilos para la presentación */
+    /* -------- Fin de Cabecera -------- */
+
+    /* -------- Presentación -------- */
     .container-presentacion {
         align-items: center;
         display: flex;
@@ -388,90 +515,129 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         padding-bottom: 61px;
     }
 
-    /* Estilos para la información dentro del contenedor de presentación */
     .container-presentacion-informacion {
         display: flex;
         gap: 24px;
         padding: 0 61px;
     }
 
-    /* Estilos para el título en la sección de presentación */
     .title-presentacion {
         font-size: 52px;
         font-weight: bold;
     }
 
-    /* Estilos para el texto en la sección de presentación */
     .text-presentacion {
         font-size: 22px;
         font-weight: 400;
     }
 
-    /* Estilos para la lista de redes sociales en presentación */
     .lista-presentacion-redes-sociales {
         display: flex;
         gap: 32px;
         list-style: none;
     }
 
-    /* Estilos para los elementos de redes sociales en presentación */
     .item-presentacion-redes-sociales {
         font-size: 16px;
         font-weight: 500;
     }
 
-    /* Estilos para la imagen de perfil en la sección de presentación */
     .presentacion-imagen-perfil {
         height: 368px;
         width: 368px;
     }
 
-    /* Estilos para la sección "Sobre mí" */
+    /* -------- Fin de Presentación -------- */
+
+    /* -------- Sobre mí -------- */
     .container-sobre-mi {
         padding: 64px;
     }
 
-    /* Estilos para el título en la sección "Sobre mí" */
     .title-sobre-mi {
         font-size: 32px;
     }
 
-    /* Estilos para el texto en la sección "Sobre mí" */
     .text-sobre-mi {
+        width: 751px;
         font-size: 16px;
-        font-weight: 400;
     }
 
-    /* Estilos para la firma en la sección "Sobre mí" */
     .firma-sobre-mi {
         height: 90px;
         width: 140px;
     }
 
-    /* Estilos para la sección de habilidades y pasatiempos */
+    /* -------- Fin de Sobre mí -------- */
+
+    /* -------- Habilidades y Pasatiempos -------- */
+    .container-skills-and-hobbies {
+        padding: 64px;
+    }
+
     .container-skills-and-hobbies h1.title-skills,
     .container-skills-and-hobbies h1.title-hobbies {
         font-size: 32px;
         font-weight: bold;
     }
 
-    /* Estilos para los elementos de la lista de habilidades y pasatiempos */
     .container-skills-and-hobbies li.item-skills,
     .container-skills-and-hobbies li.item-hobbies {
         height: 174px;
         width: 176px;
     }
 
-    /* Estilos para las listas de habilidades y pasatiempos */
     .container-skills-and-hobbies ul.lista-skills,
     .container-skills-and-hobbies ul.lista-hobbies {
         display: flex;
-        gap: 32px 16px;
-        justify-content: space-between;
+        gap: 16px;
+        justify-content: center;
     }
 
-    /* Estilos para la sección de hobbies */
     .hobbies {
         padding-top: 88px;
     }
+
+    /* -------- Fin de Habilidades y Pasatiempos -------- */
+
+    /* -------- Formación Académica -------- */
+    .title-formacion-academica {
+        font-size: 32px;
+    }
+
+    .formacion-academica {
+        padding: 64px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .container-card-imagen-formacion-academica {
+        height: 286px;
+        width: 368px;
+    }
+
+    .cards-formacion-academica:nth-of-type(1) .logo-formacion-academica {
+        width: 192px;
+        height: 192px;
+    }
+
+    .cards-formacion-academica:nth-of-type(2) .logo-formacion-academica {
+        width: 192px;
+        height: 192px;
+    }
+
+    .cards-formacion-academica:nth-of-type(3) .logo-formacion-academica {
+        width: 192px;
+        height: 192px;
+    }
+
+    .text-container {
+        height: 286px;
+        width: 368px;
+    }
+
+    /* -------- Fin de Formación Académica -------- */
+
 }
+
+/* -------- Fin de Desarrollo desktop -------- */
