@@ -205,6 +205,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 .skills {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
 }
 
@@ -255,6 +256,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 .hobbies {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 32px;
     padding-top: 16px;
 }
@@ -280,6 +282,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 .formacion-academica {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
 }
 
@@ -345,6 +348,100 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 }
 
 /* -------- Fin de Estilos de Formación académica -------- */
+
+/* -------- Experiencia Profesional -------- */
+
+/* Contenedor principal para la sección de experiencia profesional */
+.container-experiencia-profesional {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    padding: 32px;
+}
+
+/* Título de la sección de experiencia profesional */
+.title-experiencia-profesional {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contenedor flexible para las tarjetas de experiencia profesional */
+.experiencia-profesional {
+    height: 251px;
+    width: 296px;
+}
+
+/* Contenedor para la imagen en cada tarjeta de experiencia profesional */
+.container-card-imagen-experiencia-profesional {
+    padding: 16px 0;
+}
+
+/* Miniatura en cada tarjeta de experiencia profesional */
+.miniatura-experiencia-profesional {
+    height: 144px;
+    width: 296px;
+}
+
+/* Contenedor de contenido en cada tarjeta de experiencia profesional */
+.contenido-container-experiencia-profesional {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Título del proyecto en cada tarjeta de experiencia profesional */
+.title-experiencia-profesional-proyecto {
+    font-size: 16px;
+}
+
+/* Descripción del proyecto en cada tarjeta de experiencia profesional */
+.text-experiencia-profesional {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Contenedor de botones en cada tarjeta de experiencia profesional */
+.botones-container-experiencia-profesional {
+    display: flex;
+    gap: 16px;
+}
+
+/* Estilo común para los botones de repositorio y página */
+.boton-repositorio-experiencia-profesional,
+.boton-pagina-experiencia-profesional {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Botón personalizado para el repositorio */
+.boton-repositorio-experiencia-profesional-custom {
+    font-size: 13px;
+}
+
+/* Estilo para el botón de repositorio */
+.boton-repositorio-experiencia-profesional {
+    border: 1px solid var(--color-de-botones);
+    color: var(--color-de-botones);
+    width: 108px;
+}
+
+/* Estilo para el botón de la página */
+.boton-pagina-experiencia-profesional {
+    background-color: var(--color-de-botones);
+    color: var(--color-de-fondo-terciario);
+    width: 96px;
+}
+
+/* -------- Fin de Estilos de Experiencia Profesional -------- */
 
 /* -------- Desarrollo Tablet -------- */
 
@@ -447,17 +544,36 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     }
 
     .container-card-imagen-formacion-academica {
-        width: 224px;
         height: 118px;
+        width: 224px;
     }
 
     .text-container {
-        width: 224px;
         height: 118px;
+        width: 224px;
     }
 
     /* -------- Fin de Formación Académica -------- */
 
+    /* -------- Experiencia Profesional -------- */
+    .container-experiencia-profesional {
+        align-items: center;
+        display: grid;
+        gap: 64px;
+        justify-content: center;
+    }
+
+    .experiencia-profesional {
+        height: 427px;
+        width: 704px;
+    }
+
+    .miniatura-experiencia-profesional {
+        height: 320px;
+        width: 704px;
+    }
+
+    /* -------- Fin de Estilos de Experiencia Profesional -------- */
 }
 
 /* -------- Fin de Desarrollo Tablet -------- */
@@ -519,6 +635,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         display: flex;
         gap: 24px;
         padding: 0 61px;
+        width: 1136px;
     }
 
     .title-presentacion {
@@ -552,6 +669,13 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     /* -------- Sobre mí -------- */
     .container-sobre-mi {
         padding: 64px;
+        padding-top: 100px;
+    }
+
+    .sobre-mi {
+        align-items: flex-start;
+        display: flex;
+        width: 1136px;
     }
 
     .title-sobre-mi {
@@ -559,8 +683,8 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     }
 
     .text-sobre-mi {
-        width: 751px;
         font-size: 16px;
+        width: 751px;
     }
 
     .firma-sobre-mi {
@@ -573,6 +697,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     /* -------- Habilidades y Pasatiempos -------- */
     .container-skills-and-hobbies {
         padding: 64px;
+        padding-top: 100px;
     }
 
     .container-skills-and-hobbies h1.title-skills,
@@ -589,9 +714,11 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 
     .container-skills-and-hobbies ul.lista-skills,
     .container-skills-and-hobbies ul.lista-hobbies {
+        align-items: center;
         display: flex;
         gap: 16px;
         justify-content: center;
+        width: 1136px;
     }
 
     .hobbies {
@@ -605,10 +732,18 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
         font-size: 32px;
     }
 
+    .container-formacion-academica {
+        padding-top: 100px;
+    }
+
     .formacion-academica {
         padding: 64px;
+    }
+
+    .cards-formacion-academica {
+        align-items: center;
         display: flex;
-        justify-content: space-evenly;
+        width: 1136px;
     }
 
     .container-card-imagen-formacion-academica {
@@ -617,18 +752,18 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     }
 
     .cards-formacion-academica:nth-of-type(1) .logo-formacion-academica {
-        width: 192px;
         height: 192px;
+        width: 192px;
     }
 
     .cards-formacion-academica:nth-of-type(2) .logo-formacion-academica {
-        width: 192px;
         height: 192px;
+        width: 192px;
     }
 
     .cards-formacion-academica:nth-of-type(3) .logo-formacion-academica {
-        width: 192px;
         height: 192px;
+        width: 192px;
     }
 
     .text-container {
@@ -638,6 +773,34 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 
     /* -------- Fin de Formación Académica -------- */
 
+    /* -------- Experiencia Profesional -------- */
+    .container-experiencia-profesional {
+        display: flex;
+        justify-content: center;
+    }
+
+    .experiencia-profesional {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: flex-start;
+        width: 1136px;
+    }
+
+    .container-experiencia-profesional .experiencia-profesional:nth-of-type(2),
+    .container-experiencia-profesional .experiencia-profesional:nth-of-type(4) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    .miniatura-experiencia-profesional {
+        height: 406px;
+        width: 752px;
+    }
+
+    /* -------- Fin de Estilos de Experiencia Profesional -------- */
 }
 
 /* -------- Fin de Desarrollo desktop -------- */
