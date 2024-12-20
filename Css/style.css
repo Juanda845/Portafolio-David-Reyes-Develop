@@ -28,7 +28,7 @@ html {
 
 /* Estilos aplicados al cuerpo */
 body {
-    background-color: var(--color-de-fondo);
+    background-color: var(--color-de-fondo-terciario);
     color: var(--color-de-letra);
     font-family: var(--fuente-raleway);
     min-height: 100vh;
@@ -236,6 +236,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 .container-skills-and-hobbies li.item-skills,
 .container-skills-and-hobbies li.item-hobbies {
     background-color: var(--color-de-fondo-terciario);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -298,6 +299,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
 .container-card-imagen-formacion-academica {
     align-items: center;
     background-color: var(--color-de-fondo-terciario);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
     display: flex;
     gap: 8px;
     height: 118px;
@@ -441,7 +443,97 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     width: 96px;
 }
 
-/* -------- Fin de Estilos de Experiencia Profesional -------- */
+/* -------- Fin de Estilos de Experiencia profesional -------- */
+
+/* -------- Sección de Contacto -------- */
+
+/* Contenedor principal para la sección de contacto */
+.container-contacto {
+    padding: 32px;
+    background-color: var(--color-de-fondo-secundario);
+}
+
+/* Miniatura en la sección de contacto */
+.miniatura-contacto {
+    display: none;
+}
+
+/* Contenedor flexible para la sección de contacto */
+.contacto {
+    display: grid;
+    gap: 8px;
+}
+
+/* Contenedor del formulario de contacto */
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 32px;
+}
+
+/* Estilos para los campos de entrada del formulario de contacto */
+.input-contacto:nth-child(1),
+.input-contacto:nth-child(2),
+.input-contacto:nth-child(3),
+.input-contacto:nth-child(4) {
+    border: none;
+    border-bottom: gray solid 3px;
+    border-radius: 5px;
+    display: grid;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 4px;
+    height: 56px;
+    padding: 12px;
+    width: 296px;
+}
+
+/* Estilo específico para el cuarto campo de entrada del formulario de contacto */
+.input-contacto:nth-child(4) {
+    height: 133px;
+    resize: vertical;
+}
+
+/* Estilos para los placeholders de los campos de entrada del formulario de contacto */
+.input-contacto::placeholder {
+    color: var(--color-de-botones);
+}
+
+/* Estilos para el botón de contacto */
+.button-contacto {
+    background-color: var(--color-de-botones);
+    border: none;
+    color: var(--color-de-fondo-terciario);
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    width: 133px;
+}
+
+/* -------- Fin de Estilos de Contacto -------- */
+
+/* -------- Pie de Página -------- */
+
+/* Contenedor del pie de página */
+.container-pie-de-pagina {
+    align-items: center;
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    padding: 32px;
+    width: 100%;
+}
+
+/* Estilos para el texto del pie de página */
+.texto-pie-de-pagina {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 229px;
+}
+
+/* -------- Fin de Estilos de Pie de Página -------- */
 
 /* -------- Desarrollo Tablet -------- */
 
@@ -574,6 +666,22 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     }
 
     /* -------- Fin de Estilos de Experiencia Profesional -------- */
+
+    /* -------- Sección de Contacto -------- */
+    .input-contacto:nth-child(1),
+    .input-contacto:nth-child(2),
+    .input-contacto:nth-child(3),
+    .input-contacto:nth-child(4) {
+        width: 704px;
+        height: 56px;
+    }
+
+    .input-contacto:nth-child(4) {
+        height: 133px;
+        resize: vertical;
+    }
+
+    /* -------- Fin de Estilos de Contacto -------- */
 }
 
 /* -------- Fin de Desarrollo Tablet -------- */
@@ -777,6 +885,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     .container-experiencia-profesional {
         display: flex;
         justify-content: center;
+        padding-top: 100px;
     }
 
     .experiencia-profesional {
@@ -801,6 +910,22 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     }
 
     /* -------- Fin de Estilos de Experiencia Profesional -------- */
+
+    /* -------- Sección de Contacto -------- */
+    .container-contacto {
+        justify-content: center;
+        padding: 64px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .miniatura-contacto { 
+        display: flex;
+        height: 593px;
+        width: 464px;
+    }
+
+    /* -------- Fin de Estilos de Contacto -------- */
 }
 
 /* -------- Fin de Desarrollo desktop -------- */
