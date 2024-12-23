@@ -245,12 +245,21 @@
                 <span class="text-contacto">¿Quieres contactarme? <br> Complete el siguiente formulario y me pondré en
                     contacto con usted lo antes posible.</span>
                 <!-- Formulario de contacto -->
-                <form action="" class="form-contacto">
-                    <input type="text" class="input-contacto" placeholder="Nombre">
-                    <input type="email" class="input-contacto" placeholder="E-mail">
-                    <input type="text" class="input-contacto" placeholder="Asunto">
-                    <textarea class="input-contacto" placeholder="Mensaje"></textarea>
-                    <button type="submit" class="button-contacto">Enviar mensaje</button>
+                <form action="https://formsubmit.co/Juanda3194236082@gmail.com" method="POST" class="form-contacto"
+                    onsubmit="return validarFormulario()">
+                    <input type="text" class="input-contacto" placeholder="Nombre" name="name" id="nombre"
+                        oninput="validarCampos()">
+                    <input type="email" class="input-contacto" placeholder="E-mail" name="email" id="email"
+                        oninput="validarCampos()">
+                    <input type="text" class="input-contacto" placeholder="Asunto" name="subject" id="asunto"
+                        oninput="validarCampos()">
+                    <textarea class="input-contacto" placeholder="Mensaje" name="comments" id="mensaje"
+                        oninput="validarCampos()"></textarea>
+                    <input type="hidden" name="_next" id="nextPage">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit" class="button-contacto" id="boton-enviar" disabled>Enviar mensaje</button>
+                    <!-- Contenedor para mensajes de error -->
+                    <div id="mensaje-error" style="color: red;"></div>
                 </form>
             </div>
         </section>
@@ -263,6 +272,11 @@
 
     <!-- Vinculación al archivo JavaScript externo -->
     <script src="./JavaScript/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        document.getElementById('nextPage').value = window.location.href;
+    </script>
 </body>
 
 </html>
