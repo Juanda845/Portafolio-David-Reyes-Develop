@@ -505,6 +505,7 @@ i.fa-solid.fa-arrow-up-right-from-square.fa-sm {
     background-color: var(--color-de-botones);
     border: none;
     color: var(--color-de-fondo-terciario);
+    cursor: pointer;
     font-size: 14px;
     font-weight: 500;
     height: 40px;
